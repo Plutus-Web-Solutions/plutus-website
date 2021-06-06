@@ -6,16 +6,8 @@ export const Nav = styled.nav`
   height: 75px;
   display: flex;
   flex-direction: row;
-  background-color: ${({ bgOut, bgIn, textOut, textIn }) => bgOut};
   justify-content: space-between;
   align-items: center;
-  img {
-    width: 4em;
-  }
-
-  @media (max-width: 768px) {
-    padding: 0em 1em;
-  }
 `;
 
 
@@ -31,7 +23,7 @@ export const NavLinks = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 40vw;
+    width: 50%;
     .border{
         border: 2px solid #9AD3FF;
         padding: 0 0.3em;
@@ -40,5 +32,8 @@ export const NavLinks = styled.div`
 `
 
 export const NavLink = styled.a`
-padding: 0.2em;
+padding: 0 2vw;
+@media(max-width: 576px){
+  font-size: 0.7em;
+}
 `
