@@ -40,7 +40,7 @@ export const NavLink = styled.a`
 export const NavLinkButton = styled.div`
 
   border: 2px solid #9AD3FF;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 
   &:hover{
     background-color:#9AD3FF;

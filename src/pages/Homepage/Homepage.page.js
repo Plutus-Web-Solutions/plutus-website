@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../../components/Header/Header.component'
 import OurServices from '../../components/OurServices/OurServices.component'
 import ProjectDisplay from '../../components/ProjectDisplay/ProjectDisplay.component'
+import ChangingTextBox from '../../components/ChangingTextBox/ChangingTextBox.component'
+import Testimonials from '../../components/Testimonials/Testimonials.component'
 
 export default function Homepage() {
     return (
@@ -9,6 +11,8 @@ export default function Homepage() {
           <Header />
           <OurServices />
           <ProjectDisplay />
+          <ChangingTextBox />
+          <Testimonials/>
         </>
     )
 }

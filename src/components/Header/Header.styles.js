@@ -27,7 +27,7 @@ export const HeaderDiv = styled.div`
   @media(max-width: 576px){
     display: flex;
     flex-direction: column;
-    align-items; center;
+    align-items: center;
 
   }
 
@@ -60,7 +60,7 @@ export const HeaderTitle = styled.div`
   
   @media screen and (max-width: 992px) {
     font-size: 2.5rem;
-
+  }
   @media(max-width: 576px){
     font-size: 1.5rem;
 

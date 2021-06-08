@@ -7,13 +7,13 @@ const NavBar = () => {
     return (
         <Container fluid style={{padding:"1em"}}>
                 <Row>
-                    <Col lg={6} md={6} sm={3} xs={3}>
+                    <Col lg={7} md={6} sm={3} xs={3}>
                         <NavHeading>
                         PLUTUS
                         </NavHeading>
                     </Col>
                     
-                    <Col lg={6} md={6} sm={9} xs={9}>
+                    <Col lg={5} md={6} sm={9} xs={9}>
                         <NavLinks className="align-items-center">
                             <NavLink>Home</NavLink>
                             <NavLink>About Us</NavLink>
