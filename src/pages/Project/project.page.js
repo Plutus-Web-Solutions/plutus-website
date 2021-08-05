@@ -7,16 +7,20 @@ import Testimonials from '../../components/Testimonials/Testimonials.component'
 import ContactUs from '../../components/ContactUs/ContactUs.component'
 import Footer from '../../components/Footer/Footer.component'
 import ContactUs2 from '../../components/ContactUs2/Testimonials.component'
+import PortfolioHeader from '../../components/PortfolioHeader/PortfolioHeader.component'
+import IndividualProject from '../../components/IndividualProject/IndividualProject.component'
+import ProjectHeader from '../../components/ProjectHeader/ProjectHeader.component'
+import ProjectColours from '../../components/ProjectColours/ProjectColours.component'
+import ProjectSlider from '../../components/ProjectSlider/ProjectSlider.component'
 
-export default function Homepage() {
+export default function Project() {
     return (
         <>
-          <Header />
-          <OurServices />
-          <ProjectDisplay />
-          <ChangingTextBox Bgcolor="rgba(154,211,255,0.3)"/>
-          {/* <Testimonials/>
-          <ContactUs /> */}
+          <ProjectHeader
+          title="The Girl Code" 
+          subtitle="Lorem ipsum before this is amazing and now is too"/>
+          <ProjectColours/>
+          <ProjectSlider/>
           <ContactUs2/>
           <Footer />
         </>

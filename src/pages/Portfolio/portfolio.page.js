@@ -7,16 +7,15 @@ import Testimonials from '../../components/Testimonials/Testimonials.component'
 import ContactUs from '../../components/ContactUs/ContactUs.component'
 import Footer from '../../components/Footer/Footer.component'
 import ContactUs2 from '../../components/ContactUs2/Testimonials.component'
+import PortfolioHeader from '../../components/PortfolioHeader/PortfolioHeader.component'
+import IndividualProject from '../../components/IndividualProject/IndividualProject.component'
 
-export default function Homepage() {
+export default function Portfolio() {
     return (
         <>
-          <Header />
+          <PortfolioHeader/>
           <OurServices />
-          <ProjectDisplay />
-          <ChangingTextBox Bgcolor="rgba(154,211,255,0.3)"/>
-          {/* <Testimonials/>
-          <ContactUs /> */}
+          <IndividualProject/>
           <ContactUs2/>
           <Footer />
         </>

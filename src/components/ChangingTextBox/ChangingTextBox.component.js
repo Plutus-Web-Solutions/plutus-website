@@ -9,8 +9,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import NavBar from "../NavBar/NavBar.component";
 
 class ChangingTextBox extends React.Component{
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.state= {
       words: ["word1", 'word2', 'wordthree'],
       index: 0
@@ -39,13 +39,15 @@ class ChangingTextBox extends React.Component{
 
   render(){
     let {index, words} = this.state;
+    let {Bgcolor} = this.props;
+   
     return(
-      <Container fluid className="d-flex justify-content-center" style={{ backgroundColor: "rgba(154,211,255,0.3)", height:"30vh" }}>
+      <Container fluid className="d-flex justify-content-center" 
+      style={{ backgroundColor: `${Bgcolor}`, height:"30vh" }}>
       <Row style={{ padding: "2em" }}>
           <Title>
             We are <HighlightedWord>{words[index]}</HighlightedWord>
           </Title>
-          
       </Row>
     </Container>
     );

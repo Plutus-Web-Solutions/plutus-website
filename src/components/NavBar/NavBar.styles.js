@@ -1,55 +1,38 @@
-import styled from 'styled-components';
-
-
+import styled from "styled-components";
 
 export const NavHeading = styled.div`
   font-weight: 550;
   font-size: 2em;
 
   @media screen and (max-width: 768px) {
-    font-size:1em;
-    
+    font-size: 1em;
   }
- 
-`
+`;
 
 export const NavLinks = styled.div`
-  
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+`;
 
-    
-   
-      
-`
+export const NavLink = styled.div`
+  color: black;
 
-export const NavLink = styled.a`
-    color:black;
+  &:hover {
+    color: #9ad3ff;
     text-decoration: none;
-
-    &:hover{
-      color:#9AD3FF;
-      text-decoration: none; 
-    }
-
-    
-
-`
+  }
+`;
 
 export const NavLinkButton = styled.div`
-
-  border: 2px solid #9AD3FF;
+  border: 2px solid #9ad3ff;
   padding: 0.5em 1em;
+  transition: all 0.2s;
 
-  &:hover{
-    background-color:#9AD3FF;
-    text-decoration: none; 
-    color:white;
+  &:hover {
+    background-color: #9ad3ff;
+    text-decoration: none;
+    color: white;
+    border-radius: 1px;
   }
-
-
-    
-
-`
-
+`;
