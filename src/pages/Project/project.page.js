@@ -12,6 +12,7 @@ import IndividualProject from '../../components/IndividualProject/IndividualProj
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader.component'
 import ProjectColours from '../../components/ProjectColours/ProjectColours.component'
 import ProjectSlider from '../../components/ProjectSlider/ProjectSlider.component'
+import TechUsed from '../../components/TechUsed/TechUsed.component'
 
 export default function Project() {
     return (
@@ -21,6 +22,7 @@ export default function Project() {
           subtitle="Lorem ipsum before this is amazing and now is too"/>
           <ProjectColours/>
           <ProjectSlider/>
+          <TechUsed />
           <ContactUs2/>
           <Footer />
         </>
