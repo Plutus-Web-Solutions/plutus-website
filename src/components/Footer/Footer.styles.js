@@ -28,10 +28,14 @@ export const PlutusName = styled.div`
 export const FooterText = styled.div`
   width: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 0.5em;
+
+  @media screen and (min-width: 961px) {
+    flex-direction: row;
+  }
 `;
 
 export const FooterLink = styled.div``;
@@ -55,7 +59,7 @@ export const FooterButton = styled.button`
 export const FooterIconDiv = styled.div`
   width: 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 export const FooterIcon = styled.img`

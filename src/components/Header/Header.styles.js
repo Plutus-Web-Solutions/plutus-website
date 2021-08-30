@@ -62,8 +62,12 @@ export const HeaderTitle = styled.div`
 export const HeaderSubtitle = styled.div`
   padding: 1em 0;
   font-size: 1.5rem;
-  color: grey;
+  color: #202020;
+  font-weight: 300;
   font-family: Roboto, Helvetica, sans-serif;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const HeaderButtonsDiv = styled.div`
@@ -108,31 +112,57 @@ export const HeaderGraphic = styled.div`
 
 export const HeaderSolid = styled.div`
   position: absolute;
-  width: 70%;
-  height: 90%;
+  width: 45%;
+  height: 50%;
   border-radius: 50%;
   background: #9ad3ff;
-  transform: rotate(50deg);
+  transform: rotate(40deg);
+  @media screen and (max-width: 992px) {
+    height: 50%;
+    width: 40%;
+    transform: rotate(50deg);
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 40%;
+    width: 35%;
+    transform: rotate(50deg);
+  }
 `;
 
 export const HeaderLined = styled.div`
   position: absolute;
-  width: 20em;
-  height: 35em;
+  width: 45%;
+  height: 50%;
   border-radius: 50%;
   border: 5px dashed #6895fa;
   box-sizing: border-box;
-  transform: rotate(-50deg);
+  transform: rotate(-40deg);
+  @media screen and (max-width: 992px) {
+    height: 50%;
+    width: 40%;
+    transform: rotate(-50deg);
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 40%;
+    width: 35%;
+    transform: rotate(-50deg);
+  }
 `;
 
 export const HeaderGraphicImg = styled.img`
   width: 80%;
   z-index: 1;
   @media screen and (max-width: 992px) {
-    width: 100%;
+    width: 90%;
   }
 
   @media screen and (max-width: 768px) {
-    width: 50%;
+    width: 75%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
   }
 `;

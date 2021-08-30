@@ -1,103 +1,108 @@
-import styled from 'styled-components'
-
+import styled from "styled-components";
 
 export const ContactUsFormDiv = styled.div`
-    background-color:white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    z-index:3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 2em 3em;
-    height: 90%;
-   
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2em;
+  height: 90%;
 `;
 
-
 export const ContactUsFormHeading = styled.div`
-font-size: 2em;
-color: black;
-
+  font-size: 2em;
+  color: black;
 `;
 
 export const ContactUsFormSubtitle = styled.div`
-    text-align: center;
-    color: grey;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+  text-align: center;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
 `;
 
 export const ContactUsFormText = styled.div`
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+
+  &:focus {
+    border: none;
+  }
 `;
 
-
 export const ContactUsFormWrapper = styled.form`
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  height: 80%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:flex-start;
-    flex-wrap: wrap;
-    
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
 `;
 
 export const ContactUsInputWrapper = styled.div`
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 961px) {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  }
 `;
 
 export const ContactUsFormInput = styled.input`
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+  @media screen and (min-width: 961px) {
     width: 40%;
-    border: none;
-    border-bottom: 1px solid black;
-    margin-bottom: 0.5em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 export const ContactUsRadioInputWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 export const ContactUsRadioButtonsDiv = styled.div`
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 961px) {
+    width: 70%;
     flex-direction: row;
     justify-content: space-between;
-   
+    margin-right: 1em;
+  }
 `;
 
 export const ContactUsFormMessageInput = styled.textarea`
-    width: 100%;
-    border: none;
-    background-color: #F1F9FF;
-    padding: 1em;
-    
+  width: 100%;
+  border: none;
+  background-color: #f1f9ff;
+  padding: 1em;
 `;
 
 export const ContactUsFormSubmitButton = styled.button`
-    padding: 0.8em;
-    margin-top: 0.8em;
-    color: white;
-    background-color: #92B4FF;
-    border: none;
-    align-self:center;
-  
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 0em;
+  color: white;
+  background-color: #92b4ff;
+  border: none;
+  align-self: center;
 `;
-
-
-
-
