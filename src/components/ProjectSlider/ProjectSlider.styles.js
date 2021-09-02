@@ -6,39 +6,29 @@ export const ContentDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin: 2em 0em;
+  @media screen and (min-width: 992px) {
+    text-align: left;
+    margin: 0;
+  }
 `;
 
 export const Title = styled.div`
   width: 80%;
-
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 0.5em;
   color: black;
   font-weight: 600;
+  @media screen and (min-width: 768px) {
+    font-size: 2.5em;
+  }
 `;
 
 export const Subtitle = styled.div`
   width: 80%;
   font-size: 1.5em;
   color: black;
-`;
-
-const slideandgrow = keyframes`
-    0% { transform: translateX(0px) }
-	20% { transform: translateX(-160px) scale(1.5) }
-    100% { transform: translateX(-160px) scale(1.5) }
-`;
-
-const slider = keyframes`
-    0% { transform: translateX(0px); }
-	20% { transform: translateX(0px); }
-	25% { transform: translateX(0px); }
-	45% { transform: translateX(0px); }
-	50% { transform: translateX(0px); }
-	70% { transform: translateX(0px); }
-	75% { transform: translateX(0px); }
-	95% { transform: translateX(0px); }
-	100% { transform: translateX(0px);  }
 `;
 
 export const SliderDiv = styled.div`
@@ -50,24 +40,6 @@ export const SliderDiv = styled.div`
   justify-content: center;
 `;
 
-export const FirstImage = styled.img`
-  /* animation-name: ${slider};
-  animation-duration: 10s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
-`;
+export const FirstImage = styled.img``;
 
-export const SecondImage = styled.img`
-  /* animation-name: ${slideandgrow};
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite; */
-`;
-
-export const ThirdImage = styled.img`
-  /* animation-name: ${slideandgrow};
-  animation-duration: 5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite; */
-  display: none;
-`;
+export const SecondImage = styled.img``;

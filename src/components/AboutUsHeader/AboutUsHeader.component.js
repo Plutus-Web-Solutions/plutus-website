@@ -1,53 +1,43 @@
 import React from "react";
-import { Image, HeaderAlignment } from "./AboutUsHeader.styles";
+import {
+  Image,
+  HeaderAlignment,
+  HeaderImage,
+  HeaderContainer,
+} from "./AboutUsHeader.styles";
 import laptop from "../../assets/laptop.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import NavBar from "../NavBar/NavBar.component";
 import { HeaderTitle, HeaderSubtitle } from "../Header/Header.styles";
-import person1 from "../../assets/persongraphic1.png";
-import person2 from "../../assets/persongraphic2.png";
-import person3 from "../../assets/persongraphic3.png";
-import person4 from "../../assets/persongraphic4.png";
-import icon1 from "../../assets/aboutusicon (1).png";
-import icon2 from "../../assets/aboutusicon (3).png";
-import icon3 from "../../assets/aboutusicon (4).png";
-import icon4 from "../../assets/aboutusicon (5).png";
-import icon5 from "../../assets/aboutusicon (6).png";
-import icon6 from "../../assets/aboutusicon (7).png";
-import icon7 from "../../assets/Github.png";
+import headerImage from "../../assets/team.png";
 
 export default function AboutUsHeader() {
   return (
-    <Container fluid>
-      <Row>
-        <NavBar></NavBar>
+    <Container
+      fluid
+      style={{ margin: "0", padding: "0", boxSizing: "border-box" }}
+    >
+      <Row style={{ margin: "0em 0.5em" }}>
+        <NavBar active="About"></NavBar>
       </Row>
 
-      <Container style={{ height: "calc(50vh - 80px)" }}>
-        <Row style={{ height: "60%" }}>
-          {/* <Col lg={3} className="d-flex align-items-center justify-content-center">
-              <Image src={icon1} animate={2} type="icon"/>
-              <Image src={icon6} animate={1}  type="icon"/>
-              <Image src={person1} animate={3} />
-              <Image src={icon4} animate={1}  type="icon" />
-              <Image src={icon7} animate={2}  type="icon"/>
-            </Col> */}
-          <Col lg={12}>
-            <HeaderAlignment>
+      <HeaderContainer>
+        <Row style={{ height: "90%", padding: "0" }}>
+          <Col lg={6} sm={12}>
+            <HeaderAlignment bigalignment="flex-start">
+              <HeaderImage src={headerImage} />
+            </HeaderAlignment>
+          </Col>
+
+          <Col lg={6} sm={12}>
+            <HeaderAlignment bigalignment="center">
               <HeaderTitle>About Us</HeaderTitle>
               <HeaderSubtitle>
                 We are a team of four amazing people!
               </HeaderSubtitle>
             </HeaderAlignment>
           </Col>
-          {/* <Col lg={3} className="d-flex align-items-center justify-content-center">
-              <Image src={icon6} animate={2}  type="icon"/>
-              <Image src={icon2} animate={1}  type="icon"/>
-              <Image src={person2} animate={3}/>
-              <Image src={icon4} animate={1} type="icon" />
-              <Image src={icon5} animate={2}  type="icon"/>
-            </Col> */}
         </Row>
 
         {/* <Row>
@@ -72,7 +62,7 @@ export default function AboutUsHeader() {
             <Image src={icon5} animate={1} type="icon" />
           </Col>
         </Row> */}
-      </Container>
+      </HeaderContainer>
     </Container>
   );
 }

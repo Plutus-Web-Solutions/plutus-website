@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 export const FullContainter = styled(Container)`
+  overflow: hidden;
   @media screen and (min-width: 961px) {
-    height: 200vh;
   }
 `;
 const moveWaveOne = keyframes`
@@ -17,8 +17,8 @@ const moveWaveOne = keyframes`
 `;
 
 export const WaveImage = styled.div`
-  width: ${(props) => (props.big ? "600px" : "300px")};
-  height: 200%;
+  width: ${(props) => (props.big ? "50%" : "25%")};
+  height: ${(props) => props.height};
   position: absolute;
   right: 0;
   background-repeat: no-repeat;
@@ -35,17 +35,20 @@ export const WaveImage = styled.div`
 
 export const Quotes = styled.img`
   height: 5em;
+  z-index: 5;
 `;
 
 export const Title = styled.div`
   font-weight: 600;
   font-size: 3rem;
+  z-index: 5;
 `;
 
 export const SubTitle = styled.div`
   padding: 1em 0;
   font-size: 1.5rem;
   color: grey;
+  z-index: 5;
 `;
 
 export const ContentDiv = styled.div`
@@ -54,6 +57,7 @@ export const ContentDiv = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 2em;
+  z-index: 5;
 `;
 
 export const TestimonialsDiv = styled.div`
@@ -61,12 +65,12 @@ export const TestimonialsDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 2;
+  z-index: 5;
 `;
 
 export const Alignment = styled.div`
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: ${(props) =>
@@ -76,7 +80,7 @@ export const Alignment = styled.div`
 export const TestimonialDiv = styled.div`
   width: 90%;
   background-color: white;
-  z-index: 2;
+  z-index: 5;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 1em;
   font-size: 1em;

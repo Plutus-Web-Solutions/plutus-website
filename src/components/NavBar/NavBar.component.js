@@ -6,8 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import './NavBar.scss'
 import ScriptTag from 'react-script-tag';
 
-class NavBar extends React.Component{
-  render(){
+const NavBar = ({ active }) => {
   return (
     <>
     <Container fluid style={{ padding: "1em" }}>
@@ -19,21 +18,21 @@ class NavBar extends React.Component{
         <Col lg={5} md={6} sm={9} xs={9}>
           <NavLinks className="align-items-center">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-              <NavLink>Home</NavLink>
+              <NavLink active={active === "Home"}>Home</NavLink>
             </Link>
 
             <Link
               to="/aboutus"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <NavLink>About Us</NavLink>
+              <NavLink active={active === "About"}>About Us</NavLink>
             </Link>
 
             <Link
               to="/portfolio"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <NavLink>Portfolio</NavLink>
+              <NavLink active={active === "Portfolio"}>Portfolio</NavLink>
             </Link>
 
             <NavLinkButton>Let's Talk</NavLinkButton>
@@ -65,6 +64,6 @@ class NavBar extends React.Component{
 
     </>
   )}
-};
+
 
 export default NavBar;

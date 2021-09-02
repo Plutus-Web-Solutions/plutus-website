@@ -1,58 +1,80 @@
 import React from "react";
-import map from '../../assets/map.png'
+import map from "../../assets/map.png";
 import { Container, Row, Col } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.css';
-import NavBar from '../NavBar/NavBar.component';
-import { HeaderTitle, HeaderSubtitle } from "./ProjectHeader.styles";
-import { Image, Line, Alignment, ContentDiv, ProjectTypeHeading, CompanyNameHeading, ProjectDescription, ViewProject} from "../IndividualProject/IndividualProject.styles"
-import project from '../../assets/project.png'
-import projectleft from '../../assets/projectleft.png'
+import "bootstrap/dist/css/bootstrap.css";
+import NavBar from "../NavBar/NavBar.component";
+import {
+  HeaderTitle,
+  HeaderSubtitle,
+  ProjectRow,
+} from "./ProjectHeader.styles";
+import {
+  Image,
+  Line,
+  Alignment,
+  ContentDiv,
+  ProjectTypeHeading,
+  CompanyNameHeading,
+  ProjectDescription,
+  ViewProject,
+  ProjectCol,
+} from "../IndividualProject/IndividualProject.styles";
+import project from "../../assets/project.png";
+import projectleft from "../../assets/projectleft.png";
+import tgc from "../../assets/tgc.png";
 
 export default function ProjectHeader(props) {
   return (
-    <Container fluid >
-        <Row>
-          <NavBar></NavBar>
-        </Row>
+    <Container fluid style={{ padding: "0", boxSizing: "border-box" }}>
+      <Row style={{ margin: "0em 0.5em" }}>
+        <NavBar active="Portfolio"></NavBar>
+      </Row>
 
-        <Container style={{height: "calc(50vh - 80px)"}} className="d-flex justify-content-center align-items-center">
-          <div>
+      <Container
+        className="d-flex justify-content-center align-items-center"
+        style={{ margin: "3em 0em" }}
+      >
+        <div>
           <HeaderTitle>{props.title}</HeaderTitle>
           <HeaderSubtitle>{props.subtitle}</HeaderSubtitle>
-          </div>
-        </Container >
+        </div>
+      </Container>
 
-        <Container style={{height: "100vh", backgroundColor:"#F1F9FF"}}>
-        <Row>
-         <Col lg={{offset:1, span:5}} className="d-flex justify-content-center">
-           <ContentDiv>
-           <ProjectTypeHeading>UI/UX | Full Prototyping</ProjectTypeHeading>
-           <CompanyNameHeading>Web Design Project</CompanyNameHeading>
-           <ProjectDescription>
-           Dont stop me now I am having such a good time,
-            I am a shooting star like a tiger defying the laws 
-            of gravity. I am like a lafy givoca, no one is stopp 
-            me, I am burn in the through fire 200 degrees the
-            why they call me Mr. Farehnity, I am travelling at 
-            speed of light I am a super sonic mad at you 
+      <ProjectRow>
+        <ProjectCol
+          lg={{ span: 6, order: 2 }}
+          md={{ span: 6, order: 2 }}
+          sm={{ span: 12, order: 2 }}
+          xs={{ span: 12, order: 2 }}
+        >
+          <ContentDiv align="flex-start">
+            <ProjectTypeHeading>Web Design</ProjectTypeHeading>
+            <CompanyNameHeading>Company Name</CompanyNameHeading>
+            <ProjectDescription align="left">
+              Dont stop me now I am having such a good time, I am a shooting
+              star like a tiger defying the laws of gravity. I am like a lafy
+              givoca, no one is stopp me, I am burn in the through fire 200
+              degrees the why they call me Mr. Farehnity, I am travelling at
+              speed of light I am a super sonic mad at you
+            </ProjectDescription>
 
-           </ProjectDescription>
-           
-            <ViewProject> <Line/> view website</ViewProject>
-            
-           </ContentDiv>
-         </Col>
-
-         <Col lg={{span:6}} className="d-flex align-items-center" style={{padding:"0px"}}>
-           <Alignment>
-           <Image src={project}></Image>
-           </Alignment>
-           
-         </Col>
-       </Row>
-       </Container>
-
+            <ViewProject>
+              {" "}
+              <Line /> view project
+            </ViewProject>
+          </ContentDiv>
+        </ProjectCol>
+        <ProjectCol
+          lg={{ span: 6, order: 1 }}
+          md={{ span: 6, order: 1 }}
+          sm={12}
+          xs={12}
+        >
+          <Alignment align="flex-start">
+            <Image src={tgc}></Image>
+          </Alignment>
+        </ProjectCol>
+      </ProjectRow>
     </Container>
-    
   );
 }

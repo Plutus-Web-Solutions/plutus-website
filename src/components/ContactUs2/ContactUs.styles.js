@@ -8,8 +8,9 @@ export const ContactUsFormDiv = styled.div`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding: 2em;
-  height: 90%;
+  padding: 4em 2em;
+  width: 90%;
+  height: auto;
 `;
 
 export const ContactUsFormHeading = styled.div`
@@ -22,6 +23,10 @@ export const ContactUsFormSubtitle = styled.div`
   color: grey;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const ContactUsFormText = styled.div`
@@ -29,7 +34,7 @@ export const ContactUsFormText = styled.div`
   font-family: "Roboto", sans-serif;
   font-size: 0.9em;
   font-weight: 600;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0em;
 
   &:focus {
     border: none;
@@ -54,7 +59,7 @@ export const ContactUsInputWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 990px) {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -66,7 +71,7 @@ export const ContactUsFormInput = styled.input`
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 1em;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 990px) {
     width: 40%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -82,7 +87,7 @@ export const ContactUsRadioInputWrapper = styled.div`
 export const ContactUsRadioButtonsDiv = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 990px) {
     width: 70%;
     flex-direction: row;
     justify-content: space-between;
@@ -100,9 +105,12 @@ export const ContactUsFormMessageInput = styled.textarea`
 export const ContactUsFormSubmitButton = styled.button`
   width: 100%;
   padding: 0.8em;
-  margin-top: 0em;
+  margin-top: 0.5em;
   color: white;
   background-color: #92b4ff;
   border: none;
   align-self: center;
+  @media screen and (max-width: 768px) {
+    padding: 0.25em;
+  }
 `;

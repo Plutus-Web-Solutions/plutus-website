@@ -1,25 +1,43 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const TechUsedDiv = styled.div`
-    height: 30vh;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f1f9ff;
+  padding: 3em;
+  box-sizing: border-box;
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-    align-items: center;
-    background-color: white;
+  }
 `;
 
 export const TechUsedText = styled.div`
-width: 50%;
-text-align: center;
-font-size: 2em;
+  flex: 0.3;
+  text-align: left;
+  font-size: 2em;
 `;
 
-export const TechDivs = styled.div`
-width: 30%;
-background-color: #f2f2f2
+export const TechUsedContainer = styled.div`
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const TechDiv = styled.div`
+  flex: 0.8;
+  flex-wrap: wrap;
+  /* background-color: #f2f2f2; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const TechImg = styled.img`
-height: 4em;
-padding: 0.5em;
+  height: 5em;
+  padding: 0.5em;
 `;

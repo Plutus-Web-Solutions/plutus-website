@@ -9,7 +9,6 @@ import {
   SliderDiv,
   FirstImage,
   SecondImage,
-  ThirdImage,
 } from "./ProjectSlider.styles";
 import device from "../../assets/device.png";
 
@@ -24,8 +23,8 @@ class ProjectSlider extends React.Component {
 
   render() {
     return (
-      <Container fluid style={{ height: "100vh", backgroundColor: "#F1F9FF" }}>
-        <Row style={{ height: "100vh" }}>
+      <Container fluid style={{ backgroundColor: "#F1F9FF" }}>
+        <Row>
           <Col lg={6}>
             <ContentDiv>
               <Title> One stop shop for all your needs!</Title>
@@ -39,10 +38,6 @@ class ProjectSlider extends React.Component {
             <SliderDiv>
               <FirstImage src={device} style={{ height: "70%" }} />
               <SecondImage src={device} style={{ height: "50%" }} />
-              <ThirdImage src={device} style={{ height: "50%" }} />
-              <ThirdImage src={device} style={{ height: "50%" }} />
-              <ThirdImage src={device} style={{ height: "50%" }} />
-              <ThirdImage src={device} style={{ height: "50%" }} />
             </SliderDiv>
           </Col>
         </Row>

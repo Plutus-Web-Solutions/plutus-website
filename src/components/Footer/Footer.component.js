@@ -39,7 +39,7 @@ export default function Footer() {
           <FooterLink>Portfolio</FooterLink>
         </Link>
       </FooterText>
-      <FooterButton>LET'S TALK</FooterButton>
+      <FooterButton>plutus.websolutions@gmail.com</FooterButton>
       <FooterIconDiv>
         <FooterIcon src={git} />
         <FooterIcon src={twitter} />
