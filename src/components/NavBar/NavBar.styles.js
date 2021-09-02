@@ -17,6 +17,8 @@ export const NavLinks = styled.div`
 
 export const NavLink = styled.div`
   color: black;
+  border-bottom: ${(props) => (props.active ? " #9ad3ff 1.5px solid" : "none")};
+  padding: 0.25em 0.25em;
 
   &:hover {
     color: #9ad3ff;

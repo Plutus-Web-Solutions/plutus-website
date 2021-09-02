@@ -4,7 +4,7 @@ import { NavHeading, NavLink, NavLinks, NavLinkButton } from "./NavBar.styles";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
-const NavBar = () => {
+const NavBar = ({ active }) => {
   return (
     <Container fluid style={{ padding: "1em" }}>
       <Row>
@@ -15,21 +15,21 @@ const NavBar = () => {
         <Col lg={5} md={6} sm={9} xs={9}>
           <NavLinks className="align-items-center">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-              <NavLink>Home</NavLink>
+              <NavLink active={active === "Home"}>Home</NavLink>
             </Link>
 
             <Link
               to="/aboutus"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <NavLink>About Us</NavLink>
+              <NavLink active={active === "About"}>About Us</NavLink>
             </Link>
 
             <Link
               to="/portfolio"
               style={{ textDecoration: "none", color: "black" }}
             >
-              <NavLink>Portfolio</NavLink>
+              <NavLink active={active === "Portfolio"}>Portfolio</NavLink>
             </Link>
 
             <NavLinkButton>Let's Talk</NavLinkButton>

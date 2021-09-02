@@ -48,24 +48,33 @@ class ContactUs2 extends React.Component {
         service: "",
         phone: "",
       },
+      height: "",
     };
   }
 
+  componentDidMount() {
+    const height = document.getElementById("container").clientHeight;
+    this.setState({ height: height });
+  }
+
   render() {
+    console.log(this.state.height);
     return (
-      <FullContainter fluid>
+      <FullContainter fluid id="container">
         <WaveImage
           big={false}
           style={{ background: `url(${waveone})` }}
           className="wave1"
+          height={this.state.height + "px"}
         />
         <WaveImage
           big={true}
           style={{ background: `url(${wavetwo})` }}
           className="wave2"
+          height={this.state.height + "px"}
         />
         <Row>
-          <Col xl={6} lg={6} md={2} style={{}}>
+          <Col xl={6} lg={6} md={12} style={{}}>
             <ContentDiv>
               <div>
                 <Quotes src={quotes} />
@@ -79,7 +88,7 @@ class ContactUs2 extends React.Component {
             </ContentDiv>
           </Col>
 
-          <Col xl={6} lg={6} md={2} style={{}}>
+          <Col xl={6} lg={6} md={12} style={{}}>
             <TestimonialsDiv>
               <Alignment align="end">
                 <TestimonialDiv>
@@ -117,9 +126,10 @@ class ContactUs2 extends React.Component {
           </Col>
         </Row>
 
-        <Row lg={12} style={{ height: "100vh" }}>
+        {/* <Row lg={12} style={{ margin: "3em 0em" }}>
           <Col
             lg={12}
+            md={12}
             className="d-flex justify-content-center align-items-center"
           >
             <ContactUsFormDiv>
@@ -208,7 +218,7 @@ class ContactUs2 extends React.Component {
               </ContactUsFormWrapper>
             </ContactUsFormDiv>
           </Col>
-        </Row>
+        </Row> */}
       </FullContainter>
     );
   }

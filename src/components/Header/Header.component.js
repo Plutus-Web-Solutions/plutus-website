@@ -14,12 +14,13 @@ import laptop from "../../assets/laptop.png";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import NavBar from "../NavBar/NavBar.component";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <Container fluid>
-      <Row>
-        <NavBar></NavBar>
+      <Row style={{ margin: "0em 0.5em" }}>
+        <NavBar active="Home"></NavBar>
       </Row>
 
       <Row
@@ -37,7 +38,9 @@ export default function Header() {
             <HeaderSubtitle>That's why you should hire us!</HeaderSubtitle>
             <HeaderButtonsDiv>
               <HeaderButton type="normal">CONTACT US</HeaderButton>
-              <HeaderButton type="inverse"> PORTFOLIO</HeaderButton>
+              <Link to="/portfolio">
+                <HeaderButton type="inverse"> PORTFOLIO</HeaderButton>
+              </Link>
             </HeaderButtonsDiv>
           </HeaderText>
         </Col>
