@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavHeading, NavLink, NavLinks, NavLinkButton } from "./NavBar.styles";
 import { Container, Row, Col, Image } from "react-bootstrap";
@@ -7,6 +7,11 @@ import './NavBar.scss'
 import ScriptTag from 'react-script-tag';
 
 const NavBar = ({ active }) => {
+  const [isActive, setActive] = useState(true)
+  const toggleClass = () => {
+    setActive(!isActive)
+    console.log(isActive)
+  }
   return (
     <>
     <Container fluid style={{ padding: "1em" }}>
@@ -14,7 +19,7 @@ const NavBar = ({ active }) => {
         <Col lg={7} md={6} sm={3} xs={3}>
           <NavHeading>PLUTUS</NavHeading>
         </Col>
-
+    
         <Col lg={5} md={6} sm={9} xs={9}>
           <NavLinks className="align-items-center">
             <Link to="/" style={{ textDecoration: "none", color: "black" }}>
@@ -42,7 +47,7 @@ const NavBar = ({ active }) => {
     </Container>
     <header class="header">
   <div class="logo"><a href="/">Logo</a></div>
-  <div class="hambergur">
+  <div class=  {isActive ? 'active' : 'reverse_anim'} class='hambergur' onClick={toggleClass}>
     <div></div>
     <div></div>
     <div></div>
