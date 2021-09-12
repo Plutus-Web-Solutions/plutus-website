@@ -35,20 +35,17 @@ export const WaveImage = styled.div`
 
 export const Quotes = styled.img`
   height: 5em;
-  z-index: 5;
 `;
 
 export const Title = styled.div`
   font-weight: 600;
   font-size: 3rem;
-  z-index: 5;
 `;
 
 export const SubTitle = styled.div`
   padding: 1em 0;
   font-size: 1.5rem;
   color: grey;
-  z-index: 5;
 `;
 
 export const ContentDiv = styled.div`
@@ -57,7 +54,6 @@ export const ContentDiv = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 2em;
-  z-index: 5;
 `;
 
 export const TestimonialsDiv = styled.div`
@@ -65,12 +61,11 @@ export const TestimonialsDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 5;
 `;
 
 export const Alignment = styled.div`
   width: 100%;
-  z-index: 5;
+
   display: flex;
   flex-direction: row;
   justify-content: ${(props) =>

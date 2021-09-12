@@ -39,13 +39,20 @@ export default function Footer() {
           <FooterLink>Portfolio</FooterLink>
         </Link>
       </FooterText>
-      <FooterButton>plutus.websolutions@gmail.com</FooterButton>
-      <FooterIconDiv>
+      <FooterButton>
+        <a
+          href={`mailto:plutus.websolutions@gmail.com`}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          plutus.websolutions@gmail.com
+        </a>
+      </FooterButton>
+      {/* <FooterIconDiv>
         <FooterIcon src={git} />
         <FooterIcon src={twitter} />
         <FooterIcon src={behance} />
         <FooterIcon src={dribble} />
-      </FooterIconDiv>
+      </FooterIconDiv> */}
     </FooterDiv>
   );
 }

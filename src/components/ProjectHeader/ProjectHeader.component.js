@@ -22,23 +22,29 @@ import {
 import project from "../../assets/project.png";
 import projectleft from "../../assets/projectleft.png";
 import tgc from "../../assets/tgc.png";
+import { Link } from "react-router-dom";
 
 export default function ProjectHeader(props) {
   return (
     <Container fluid style={{ padding: "0", boxSizing: "border-box" }}>
       <Row style={{ margin: "0em 0.5em" }}>
-        <NavBar active="Portfolio"></NavBar>
+        <NavBar active="Portfolio" contact={props.contact}></NavBar>
       </Row>
 
-      <Container
-        className="d-flex justify-content-center align-items-center"
-        style={{ margin: "3em 0em" }}
+      <Row
+        style={{
+          margin: "3em 0em",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
         <div>
           <HeaderTitle>{props.title}</HeaderTitle>
           <HeaderSubtitle>{props.subtitle}</HeaderSubtitle>
         </div>
-      </Container>
+      </Row>
 
       <ProjectRow>
         <ProjectCol
@@ -59,8 +65,7 @@ export default function ProjectHeader(props) {
             </ProjectDescription>
 
             <ViewProject>
-              {" "}
-              <Line /> view project
+              <Line /> <a>view website</a>
             </ViewProject>
           </ContentDiv>
         </ProjectCol>
@@ -71,7 +76,7 @@ export default function ProjectHeader(props) {
           xs={12}
         >
           <Alignment align="flex-start">
-            <Image src={tgc}></Image>
+            <Image src={props.image}></Image>
           </Alignment>
         </ProjectCol>
       </ProjectRow>

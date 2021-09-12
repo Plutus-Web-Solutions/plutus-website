@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ProjectDisplayArrow = styled.img`
   width: 4em;
   display: none;
   @media screen and (min-width: 961px) {
     display: block;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -53,7 +57,7 @@ export const ProjectDisplayImage = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   @media screen and (min-width: 961px) {
-    flex: 0.7;
+    flex: 0.6;
   }
 `;
 
@@ -64,7 +68,7 @@ export const ProjectDisplayContent = styled.div`
   justify-content: space-evenly;
   align-items: center;
   @media screen and (min-width: 961px) {
-    flex: 0.3;
+    flex: 0.4;
     align-items: flex-start;
     margin-top: 4em;
   }
@@ -81,6 +85,17 @@ export const ProjectDisplayProgress = styled.div`
   height: 0.25em;
   background-color: grey;
   margin-bottom: 1em;
+  display: flex;
+  @media screen and (min-width: 961px) {
+    display: none;
+  }
+`;
+
+export const ProjectDisplayhalf = styled.div`
+  flex: 0.5;
+  height: 0.25em;
+  background-color: ${(props) => props.color};
+  margin-bottom: 1em;
   @media screen and (min-width: 961px) {
     display: none;
   }
@@ -88,7 +103,7 @@ export const ProjectDisplayProgress = styled.div`
 
 export const ProjectDisplayTitle = styled.div`
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 0.2em;
 
@@ -99,19 +114,25 @@ export const ProjectDisplayTitle = styled.div`
 `;
 
 export const ProjectDisplaySubTitle = styled.div`
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-bottom: 0.5em;
   @media screen and (min-width: 961px) {
     text-align: left;
   }
 `;
 
-export const ProjectDisplayLink = styled.div`
+export const ProjectDisplayLink = styled(Link)`
+  color: black;
+  text-decoration: none;
   font-size: 1.5em;
   margin-bottom: 0.5em;
   @media screen and (min-width: 961px) {
     font-size: 1.25em;
     font-weight: 600;
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
   }
 `;
 

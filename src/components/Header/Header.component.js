@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {
   HeaderButtonsDiv,
   HeaderButton,
@@ -11,53 +11,92 @@ import {
   HeaderTitle,
 } from "./Header.styles";
 import laptop from "../../assets/laptop.png";
+import graphic1 from "../../assets/tgcgraphic1.png";
+import graphic2 from "../../assets/tgcgraphic2.png";
+import graphic3 from "../../assets/tanyagraphic5.png";
+import graphic4 from "../../assets/tanyagraphic4.png";
+
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import NavBar from "../NavBar/NavBar.component";
 import { Link } from "react-router-dom";
 
-export default function Header() {
-  return (
-    <Container fluid>
-      <Row style={{ margin: "0em 0.5em" }}>
-        <NavBar active="Home"></NavBar>
-      </Row>
+class Header extends Component {
+  constructor(props) {
+    super(props);
 
-      <Row
-        className="align-items-center"
-        style={{ height: "90vh", padding: "2em" }}
-      >
-        <Col
-          lg={{ span: 6, order: 1 }}
-          md={{ span: 12, order: 2 }}
-          sm={{ span: 12, order: 2 }}
-          xs={{ span: 12, order: 2 }}
-        >
-          <HeaderText>
-            <HeaderTitle>PLUTUS IS THE BEST IN THE INDUSTRY</HeaderTitle>
-            <HeaderSubtitle>That's why you should hire us!</HeaderSubtitle>
-            <HeaderButtonsDiv>
-              <HeaderButton type="normal">CONTACT US</HeaderButton>
-              <Link to="/portfolio">
-                <HeaderButton type="inverse"> PORTFOLIO</HeaderButton>
-              </Link>
-            </HeaderButtonsDiv>
-          </HeaderText>
-        </Col>
+    this.state = {
+      images: [graphic1, graphic3, graphic2, graphic4],
+      imgIndex: 0,
+      numberImages: 4,
+    };
+  }
 
-        <Col
-          lg={{ span: 6, order: 2 }}
-          md={{ span: 12, order: 1 }}
-          sm={{ span: 12, order: 1 }}
-          xs={{ span: 12, order: 1 }}
+  componentDidMount(props) {
+    this.interval = setInterval(this.nextImage, 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  nextImage = () => {
+    this.setState((prevState) => {
+      if (prevState.imgIndex === this.state.numberImages - 1) {
+        return { imgIndex: 0 };
+      } else {
+        return { imgIndex: prevState.imgIndex + 1 };
+      }
+    });
+  };
+
+  render() {
+    return (
+      <Container fluid>
+        <Row style={{ margin: "0em 0.5em" }}>
+          <NavBar active="Home" contact={this.props.contact}></NavBar>
+        </Row>
+
+        <Row
+          className="align-items-center"
+          style={{ height: "90vh", padding: "2em" }}
         >
-          <HeaderGraphic>
-            <HeaderLined />
-            <HeaderSolid />
-            <HeaderGraphicImg src={laptop} />
-          </HeaderGraphic>
-        </Col>
-      </Row>
-    </Container>
-  );
+          <Col
+            lg={{ span: 6, order: 1 }}
+            md={{ span: 12, order: 2 }}
+            sm={{ span: 12, order: 2 }}
+            xs={{ span: 12, order: 2 }}
+          >
+            <HeaderText>
+              <HeaderTitle>PLUTUS IS THE BEST IN THE INDUSTRY</HeaderTitle>
+              <HeaderSubtitle>That's why you should hire us!</HeaderSubtitle>
+              <HeaderButtonsDiv>
+                <HeaderButton type="normal" onClick={this.props.contact}>
+                  CONTACT US
+                </HeaderButton>
+                <Link to="/portfolio">
+                  <HeaderButton type="inverse"> PORTFOLIO</HeaderButton>
+                </Link>
+              </HeaderButtonsDiv>
+            </HeaderText>
+          </Col>
+
+          <Col
+            lg={{ span: 6, order: 2 }}
+            md={{ span: 12, order: 1 }}
+            sm={{ span: 12, order: 1 }}
+            xs={{ span: 12, order: 1 }}
+          >
+            <HeaderGraphic>
+              <HeaderLined />
+              <HeaderSolid />
+              <HeaderGraphicImg src={this.state.images[this.state.imgIndex]} />
+            </HeaderGraphic>
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
+
+export default Header;

@@ -24,8 +24,8 @@ export const Circle = styled.div`
   width: 6em;
   height: 6em;
   border-radius: 6em;
-  background: linear-gradient(rgba(252, 96, 143, 0.52), rgba(252, 96, 143, 1));
-  opacity: 0.6;
+  background: ${(props) => props.color};
+
   margin: 1em;
   @media screen and (min-width: 768px) {
     width: 5em;

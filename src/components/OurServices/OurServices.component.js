@@ -40,8 +40,15 @@ class OurServices extends React.Component {
   render() {
     console.log(this.state.sizes);
     return (
-      <Container fluid style={{ backgroundColor: "rgba(154,211,255,0.3)" }}>
-        <Row style={{ padding: "2em" }}>
+      <Container
+        fluid
+        style={{
+          backgroundColor: "rgba(154,211,255,0.2)",
+          // "linear-gradient(to bottom, #ffffff, #fcfcff, #f7f9ff, #f1f6ff, #eaf4ff, #eaf4ff, #eaf4ff, #eaf4ff, #f1f6ff, #f7f9ff, #fcfcff, #ffffff)",
+          // "linear-gradient(rgba(0,0,0,0),rgba(154,211,255,0.2),rgba(0,0,0,0))",
+        }}
+      >
+        <Row style={{ padding: "4em 2em 5em 2em" }}>
           <Col lg={12}>
             <OurServicesTitle className="text-center">
               How Can We Help?

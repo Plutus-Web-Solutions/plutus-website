@@ -27,7 +27,7 @@ const Subcomponent = (props) => {
         </tag.Para>
       </tag.TextContainer>
       <tag.ImgContainer align={props.align} call={props.first}>
-        <tag.Img src={image} call={props.first} />
+        <tag.Img src={props.image} call={props.first} />
       </tag.ImgContainer>
     </tag.Container>
   );

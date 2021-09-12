@@ -16,10 +16,9 @@ export default function ProjectColours(props) {
 
       <Row className="d-flex justify-content-center">
         <CircleAlignment>
-          <Circle />
-          <Circle />
-          <Circle />
-          <Circle />
+          {props.colors.map((color) => (
+            <Circle color={color} />
+          ))}
         </CircleAlignment>
       </Row>
     </Container>

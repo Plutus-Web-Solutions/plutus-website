@@ -9,6 +9,8 @@ import Footer from "../../components/Footer/Footer.component";
 import ContactUs2 from "../../components/ContactUs2/Testimonials.component";
 import PortfolioHeader from "../../components/PortfolioHeader/PortfolioHeader.component";
 import IndividualProject from "../../components/IndividualProject/IndividualProject.component";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 class Portfolio extends Component {
   constructor() {
@@ -16,21 +18,37 @@ class Portfolio extends Component {
     this.state = {
       path: "",
     };
+    this.contactRef = React.createRef();
   }
+
+  scrollToContact = () => {
+    console.log("contact", this.contactRef);
+    this.contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   componentDidMount() {
     const path = this.props.match.path;
     this.setState({ path: path });
     window.scrollTo(0, 0);
+    Aos.init({ duration: 3000 });
   }
+
   render() {
     console.log("path,", this.state.path);
     return (
       <>
-        <PortfolioHeader />
-        <OurServices />
-        <IndividualProject />
+        <PortfolioHeader contact={this.scrollToContact} />
+
+        <div data-aos="fade-up">
+          <OurServices />
+        </div>
+        <div data-aos="fade-up">
+          <IndividualProject />
+        </div>
         <ContactUs2 />
-        <Footer />
+        <div ref={this.contactRef}>
+          <Footer />
+        </div>
       </>
     );
   }

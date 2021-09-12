@@ -40,6 +40,13 @@ export const SliderDiv = styled.div`
   justify-content: center;
 `;
 
-export const FirstImage = styled.img``;
+export const FirstImage = styled.img`
+  height: 70%;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    height: auto;
+    margin: 2em 0em;
+  }
+`;
 
 export const SecondImage = styled.img``;

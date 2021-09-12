@@ -11,12 +11,12 @@ import {
   SecondImage,
 } from "./ProjectSlider.styles";
 import device from "../../assets/device.png";
+import phone1 from "../../assets/tanyaphone1.png";
 
 class ProjectSlider extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      images: [device, device, device, device],
       index: 0,
     };
   }
@@ -34,10 +34,9 @@ class ProjectSlider extends React.Component {
             </ContentDiv>
           </Col>
 
-          <Col lg={6}>
+          <Col lg={6} style={{ padding: "0" }}>
             <SliderDiv>
-              <FirstImage src={device} style={{ height: "70%" }} />
-              <SecondImage src={device} style={{ height: "50%" }} />
+              <FirstImage src={this.props.image} />
             </SliderDiv>
           </Col>
         </Row>

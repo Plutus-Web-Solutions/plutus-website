@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  ${(props) => (props.call === "no" ? "align-items: center;" : "")}
+
   flex-direction: ${(props) =>
     props.align === "left" ? "row" : "row-reverse"};
 
@@ -31,7 +31,7 @@ export const ImgContainer = styled.div`
 export const Img = styled.img`
   width: 70%;
   @media screen and (min-width: 768px) {
-    width: 90%;
+    width: 70%;
   }
 `;
 

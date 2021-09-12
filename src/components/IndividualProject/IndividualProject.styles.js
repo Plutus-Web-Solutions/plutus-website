@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ProjectCol = styled(Col)`
   display: flex;
@@ -11,9 +12,11 @@ export const ProjectCol = styled(Col)`
 `;
 
 export const Image = styled.img`
-  width: 80%;
+  width: 100%;
+
   @media screen and (max-width: 768px) {
-    width: 50%;
+    width: 90%;
+    margin-bottom: 2em;
   }
 `;
 
@@ -21,11 +24,10 @@ export const Alignment = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+
   overflow-y: hidden;
-  @media screen and (min-width: 768px) {
-    justify-content: ${(props) => props.align};
-  }
+
+  justify-content: ${(props) => props.align};
 `;
 
 export const ContentDiv = styled.div`
@@ -74,7 +76,11 @@ export const ViewProject = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 768px) {
-    width: 40%;
+  @media screen and (min-width: 991px) {
+    width: 30%;
+  }
+
+  &:hover {
+    opacity: 80%;
   }
 `;

@@ -15,7 +15,9 @@ import projectleft from "../../assets/projectleft.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import NavBar from "../NavBar/NavBar.component";
-import tgc from "../../assets/tgc.png";
+import tgc from "../../assets/tgctwodevice1.png";
+import tanya from "../../assets/tanyatwodevice2.png";
+import { Link } from "react-router-dom";
 
 export default function IndividualProject(props) {
   return (
@@ -29,7 +31,7 @@ export default function IndividualProject(props) {
         >
           <ContentDiv align="flex-start">
             <ProjectTypeHeading>Web Design</ProjectTypeHeading>
-            <CompanyNameHeading>Company Name</CompanyNameHeading>
+            <CompanyNameHeading>Tanya M Arora</CompanyNameHeading>
             <ProjectDescription align="left">
               Dont stop me now I am having such a good time, I am a shooting
               star like a tiger defying the laws of gravity. I am like a lafy
@@ -39,8 +41,13 @@ export default function IndividualProject(props) {
             </ProjectDescription>
 
             <ViewProject>
-              {" "}
-              <Line /> view project
+              <Line />
+              <Link
+                to="portfolio/tanyamarora"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                view project
+              </Link>
             </ViewProject>
           </ContentDiv>
         </ProjectCol>
@@ -51,7 +58,7 @@ export default function IndividualProject(props) {
           xs={12}
         >
           <Alignment align="flex-start">
-            <Image src={projectleft}></Image>
+            <Image src={tanya}></Image>
           </Alignment>
         </ProjectCol>
       </Row>
@@ -67,7 +74,7 @@ export default function IndividualProject(props) {
         >
           <ContentDiv align="flex-end">
             <ProjectTypeHeading>Web Design</ProjectTypeHeading>
-            <CompanyNameHeading>Company Name</CompanyNameHeading>
+            <CompanyNameHeading>The Girl Code</CompanyNameHeading>
             <ProjectDescription align="right">
               Dont stop me now I am having such a good time, I am a shooting
               star like a tiger defying the laws of gravity. I am like a lafy
@@ -77,8 +84,13 @@ export default function IndividualProject(props) {
             </ProjectDescription>
 
             <ViewProject>
-              {" "}
-              <Line /> view project
+              <Line />
+              <Link
+                to="portfolio/thegirlcode"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                view project
+              </Link>
             </ViewProject>
           </ContentDiv>
         </ProjectCol>

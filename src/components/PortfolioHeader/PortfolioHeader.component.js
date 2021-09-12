@@ -12,14 +12,14 @@ import NavBar from "../NavBar/NavBar.component";
 import { HeaderTitle, HeaderSubtitle } from "../Header/Header.styles";
 import headerImage from "../../assets/portfolio.png";
 
-export default function PortfolioHeader() {
+export default function PortfolioHeader({ contact }) {
   return (
     <Container
       fluid
       style={{ margin: "0 0 3em 0", padding: "0", boxSizing: "border-box" }}
     >
       <Row style={{ margin: "0em 0.5em" }}>
-        <NavBar active="Portfolio"></NavBar>
+        <NavBar contact={contact} active="Portfolio"></NavBar>
       </Row>
 
       <HeaderContainer>

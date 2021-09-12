@@ -12,14 +12,55 @@ import {
   ProjectDisplayProgress,
   ProjectDisplayArrow,
   ProjectDescription,
+  ProjectDisplayhalf,
 } from "./ProjectDisplay.styles";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import laptop from "../../assets/laptop.png";
 import arrow from "../../assets/Arrow.png";
+import projects from "./projectData";
 
 class ProjectDisplay extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      projects: projects,
+      index: 0,
+      numberImages: 2,
+    };
+  }
+
+  componentDidMount(props) {
+    this.interval = setInterval(this.nextProject, 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  nextProject = () => {
+    this.setState((prevState) => {
+      if (prevState.index === this.state.numberImages - 1) {
+        return { index: 0 };
+      } else {
+        return { index: prevState.index + 1 };
+      }
+    });
+  };
+
+  prevProject = () => {
+    this.setState((prevState) => {
+      if (prevState.index === 0) {
+        return { index: this.state.numberImages - 1 };
+      } else {
+        return { index: prevState.index - 1 };
+      }
+    });
+  };
+
   render() {
+    const { index, projects } = this.state;
     return (
       <Container>
         <Row>
@@ -35,6 +76,7 @@ class ProjectDisplay extends React.Component {
             <ProjectDisplayArrow
               src={arrow}
               style={{ transform: "rotate(180deg)" }}
+              onClick={this.prevProject}
             />
           </Col>
 
@@ -51,19 +93,35 @@ class ProjectDisplay extends React.Component {
             <ProjectDisplayLinedCircle />
             <ProjectDisplayDiv>
               <ProjectDisplayImage>
-                <ProjectDisplayGraphic src={laptop} />
+                <ProjectDisplayGraphic src={projects[index].image} />
               </ProjectDisplayImage>
               <ProjectDisplayContent>
-                <ProjectDisplayTitle>HUSTLE BOSS</ProjectDisplayTitle>
-                <ProjectDisplaySubTitle>WEBSITE</ProjectDisplaySubTitle>
-                <ProjectDisplayLink>View Project</ProjectDisplayLink>
-                <ProjectDisplayProgress></ProjectDisplayProgress>
-                <ProjectDescription>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam nec nunc sem. Nulla facilisi. Aliquam accumsan dolor id
-                  luctus accumsan. Curabitur tempus vehicula orci ut fringilla.
-                  Suspendisse sit amet consectetur metus, quis faucibus dolor.
-                </ProjectDescription>
+                <ProjectDisplayTitle>
+                  {projects[index].title}
+                </ProjectDisplayTitle>
+                <ProjectDisplaySubTitle>
+                  {projects[index].subtitle}
+                </ProjectDisplaySubTitle>
+                <ProjectDisplayLink to={projects[index].link}>
+                  View Project
+                </ProjectDisplayLink>
+                <ProjectDisplayProgress>
+                  <ProjectDisplayhalf
+                    color={
+                      index === 0
+                        ? "rgba(173, 220, 255, 1)"
+                        : "rgba(0, 0, 0,0.2)"
+                    }
+                  />
+                  <ProjectDisplayhalf
+                    color={
+                      index === 1
+                        ? "rgba(173, 220, 255, 1)"
+                        : "rgba(0, 0, 0, 0.2)"
+                    }
+                  />
+                </ProjectDisplayProgress>
+                <ProjectDescription>{projects[index].desc}</ProjectDescription>
               </ProjectDisplayContent>
             </ProjectDisplayDiv>
           </Col>
@@ -77,7 +135,7 @@ class ProjectDisplay extends React.Component {
             className="d-flex justify-content-center align-items-center"
             style={{ height: "100vh" }}
           >
-            <ProjectDisplayArrow src={arrow} />
+            <ProjectDisplayArrow src={arrow} onClick={this.nextProject} />
           </Col>
         </Row>
       </Container>
