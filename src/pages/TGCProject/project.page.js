@@ -39,7 +39,7 @@ class TGCProject extends Component {
       <>
         <ProjectHeader
           title="The Girl Code"
-          subtitle="Lorem ipsum before this is amazing and now is too"
+          subtitle="Revamped the organisation's website !"
           contact={this.scrollToContact}
           image={image}
         />

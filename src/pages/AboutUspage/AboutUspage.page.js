@@ -39,7 +39,7 @@ class AboutUspage extends Component {
         <div data-aos="fade-up">
           <BlueTextDiv
             heading="OUR MISSION"
-            text="At plutus we aim tAt plutus we aim to fullfill are your agency needs and here. At plutus we aim to fullfill are your agency needs and here. At plutus we aim to fullfill are your agency needs and here.At plutus we aim to fullfill are your agency needs and hereo fullfill are your agency needs and here. At plutus we aim to fullfill are your agency needs and here. At plutus we aim to fullfill are your agency needs and here.At plutus we aim to fullfill are your agency needs and here"
+            text="At plutus, we aim to enable every startup, every company out there to have a digital presence. We are motivated to help you with all your technical needs, be it design, development, deployment, service and maintenance, at a fair price. Our highly motivated team ensures that no client misses out no business due to the lack of a digital presence!"
           />
         </div>
         <div data-aos="fade-up">

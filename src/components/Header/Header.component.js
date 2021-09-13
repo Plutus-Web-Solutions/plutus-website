@@ -68,8 +68,8 @@ class Header extends Component {
             xs={{ span: 12, order: 2 }}
           >
             <HeaderText>
-              <HeaderTitle>PLUTUS IS THE BEST IN THE INDUSTRY</HeaderTitle>
-              <HeaderSubtitle>That's why you should hire us!</HeaderSubtitle>
+              <HeaderTitle>PLUTUS WEB SOLUTIONS</HeaderTitle>
+              <HeaderSubtitle>INNOVATIVE. FUTURISTIC. FAST.</HeaderSubtitle>
               <HeaderButtonsDiv>
                 <HeaderButton type="normal" onClick={this.props.contact}>
                   CONTACT US

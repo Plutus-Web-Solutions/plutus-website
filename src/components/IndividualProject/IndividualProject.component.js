@@ -30,7 +30,7 @@ export default function IndividualProject(props) {
           xs={{ span: 12, order: 2 }}
         >
           <ContentDiv align="flex-start">
-            <ProjectTypeHeading>Web Design</ProjectTypeHeading>
+            <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>Tanya M Arora</CompanyNameHeading>
             <ProjectDescription align="left">
               Dont stop me now I am having such a good time, I am a shooting
@@ -73,14 +73,14 @@ export default function IndividualProject(props) {
           xs={{ span: 12, order: 2 }}
         >
           <ContentDiv align="flex-end">
-            <ProjectTypeHeading>Web Design</ProjectTypeHeading>
+            <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>The Girl Code</CompanyNameHeading>
             <ProjectDescription align="right">
-              Dont stop me now I am having such a good time, I am a shooting
-              star like a tiger defying the laws of gravity. I am like a lafy
-              givoca, no one is stopp me, I am burn in the through fire 200
-              degrees the why they call me Mr. Farehnity, I am travelling at
-              speed of light I am a super sonic mad at you
+              The girl code is a non-profit organisation that aims to bridge the
+              gender gap in the tech community by hosting free workshops for
+              women. It has chapters in 3 countries and has taught over 2000
+              girls. We revamped the organisation’s website to include all the
+              recent changes.
             </ProjectDescription>
 
             <ViewProject>

@@ -56,7 +56,7 @@ class OurServices extends React.Component {
           </Col>
           <Col lg={12}>
             <OurServicesSubtitle className="text-center">
-              We can help cause we are awesome!
+            We can help you with all your tech needs. We can help cause we are awesome!
             </OurServicesSubtitle>
           </Col>
         </Row>
@@ -75,8 +75,7 @@ class OurServices extends React.Component {
                 UI/UX
               </ServicesCardTitle>
               <ServicesCardSubtitle size={this.state.sizes[0]}>
-                Hi my name is Jpanit and we do web development hello and yes
-              </ServicesCardSubtitle>
+              We innovate and act upon new ideas to engage the user better and to enhance the look of the website. You can choose from the premade catalogue providing numerous design options for every component your website needs !</ServicesCardSubtitle>
             </ServiceCard>
           </Col>
           <Col
@@ -92,8 +91,8 @@ class OurServices extends React.Component {
                 Web Development
               </ServicesCardTitle>
               <ServicesCardSubtitle size={this.state.sizes[1]}>
-                Hi my name is Jpanit and we do web development hello and yes
-              </ServicesCardSubtitle>
+              Get your website developed and deployed in no time, in MERN stack(the fastest out there) Servicing for 3 months is on us!
+</ServicesCardSubtitle>
             </ServiceCard>
           </Col>
           <Col
@@ -109,8 +108,8 @@ class OurServices extends React.Component {
                 Branding & Social Media
               </ServicesCardTitle>
               <ServicesCardSubtitle size={this.state.sizes[2]}>
-                Hi my name is Jpanit and we do web development hello and yes
-              </ServicesCardSubtitle>
+              Get your website developed and deployed in no time, in MERN stack(the fastest out there) Servicing for 3 months is on us!
+</ServicesCardSubtitle>
             </ServiceCard>
           </Col>
         </Row>
