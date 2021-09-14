@@ -57,12 +57,7 @@ export default function ProjectHeader(props) {
             <ProjectTypeHeading>Web Design</ProjectTypeHeading>
             <CompanyNameHeading>Company Name</CompanyNameHeading>
             <ProjectDescription align="left">
-              Dont stop me now I am having such a good time, I am a shooting
-              star like a tiger defying the laws of gravity. I am like a lafy
-              givoca, no one is stopp me, I am burn in the through fire 200
-              degrees the why they call me Mr. Farehnity, I am travelling at
-              speed of light I am a super sonic mad at you
-            </ProjectDescription>
+             {props.content} </ProjectDescription>
 
             <ViewProject>
               <Line /> <a>view website</a>

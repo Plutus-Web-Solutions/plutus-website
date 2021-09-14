@@ -33,12 +33,8 @@ export default function IndividualProject(props) {
             <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>Tanya M Arora</CompanyNameHeading>
             <ProjectDescription align="left">
-              Dont stop me now I am having such a good time, I am a shooting
-              star like a tiger defying the laws of gravity. I am like a lafy
-              givoca, no one is stopp me, I am burn in the through fire 200
-              degrees the why they call me Mr. Farehnity, I am travelling at
-              speed of light I am a super sonic mad at you
-            </ProjectDescription>
+            Tanya M Arora is a fashion designer based out of Delhi. She encapsulates an enormous range of collections, from bridal to partywear. We helped her get a digital presence by portraying her work on a website. 
+</ProjectDescription>
 
             <ViewProject>
               <Line />

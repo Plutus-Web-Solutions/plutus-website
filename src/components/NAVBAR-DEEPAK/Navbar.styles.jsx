@@ -7,15 +7,14 @@ export const Navbar = styled.nav`
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 `;
 
 export const NavLogo = styled.a`
   color: #000;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 550;
+  font-size: 2rem;
   text-transform: uppercase;
-  line-height: 0.8;
+
 `;
 
 export const Hamburger = styled.div`
@@ -121,6 +120,8 @@ const CircleAnimation = keyframes`
 
 export const NavItem = styled.li`
   padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-bottom: ${(props) => (props.active ? " #9ad3ff 1.5px solid" : "none")};
 
   ${(props) => {
     return (
@@ -139,13 +140,20 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled.a`
-  font-size: 2rem;
   text-decoration: none;
+  color: black;
+  border-bottom: ${(props) => (props.active ? " #9ad3ff 1.5px solid" : "none")};
+  padding: 0.25em 0.25em;
+
+  &:hover {
+    color: #9ad3ff;
+    text-decoration: none;
+  }
   color: #7e82f4;
   text-transform: uppercase;
 
   @media (min-width: 991px) {
     color: #000;
-    font-size: 1.2rem;
+    
   }
 `;

@@ -10,12 +10,16 @@ import {
   NavLogo,
 } from "./Navbar.styles";
 
-const NavBar = () => {
+const NavBar = ({contact}) => {
   const [isNavVisible, setNavVisible] = useState(false);
 
   return (
     <Navbar>
-      <NavLogo>Logo</NavLogo>
+      <NavLogo>
+        <NavLink href='/'>
+        PLUTUS
+        </NavLink>
+        </NavLogo>
       <Hamburger
         active={isNavVisible}
         onClick={() => setNavVisible(!isNavVisible)}
@@ -31,22 +35,19 @@ const NavBar = () => {
           </NavItem>
 
           <NavItem active={isNavVisible} order={2}>
-            <NavLink href="/">About</NavLink>
+            <NavLink href="/aboutus">About Us</NavLink>
           </NavItem>
 
           <NavItem active={isNavVisible} order={3}>
-            <NavLink active={isNavVisible} href="/">
-              Contact
+            <NavLink active={isNavVisible} href="/portfolio">
+              Portfolio
             </NavLink>
           </NavItem>
 
-          <NavItem active={isNavVisible} order={4}>
-            <NavLink href="/">Services</NavLink>
+          <NavItem onClick={contact} active={isNavVisible} order={4}>
+            Let's Talk
           </NavItem>
 
-          <NavItem active={isNavVisible} order={5}>
-            <NavLink href="/">Blogs</NavLink>
-          </NavItem>
         </NavItems>
       </NavContent>
     </Navbar>
