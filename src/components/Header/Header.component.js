@@ -57,10 +57,7 @@ class Header extends Component {
           <NavBar active="Home" contact={this.props.contact}></NavBar>
         </Row>
 
-        <Row
-          className="align-items-center"
-          style={{ height: "90vh", padding: "2em" }}
-        >
+        <Row className="align-items-center" style={{ padding: "4em 2em" }}>
           <Col
             lg={{ span: 6, order: 1 }}
             md={{ span: 12, order: 2 }}

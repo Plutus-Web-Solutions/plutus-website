@@ -33,9 +33,9 @@ export const HeaderDiv = styled.div`
 export const HeaderText = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin-top: 5em;
   padding-left: 2em;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ export const HeaderTitle = styled.div`
   font-weight: 600;
   font-size: 3rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     text-align: center;
   }
 
@@ -65,7 +65,7 @@ export const HeaderSubtitle = styled.div`
   color: #202020;
   font-weight: 300;
   font-family: Roboto, Helvetica, sans-serif;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     text-align: center;
   }
 `;
@@ -74,7 +74,7 @@ export const HeaderButtonsDiv = styled.div`
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     justify-content: center;
   }
 `;
@@ -112,54 +112,58 @@ export const HeaderGraphic = styled.div`
 
 export const HeaderSolid = styled.div`
   position: absolute;
-  width: 45%;
-  height: 50%;
+  width: 15em;
+  height: 35em;
   border-radius: 50%;
   background: #9ad3ff;
-  transform: rotate(40deg);
+  transform: rotate(50deg);
   @media screen and (max-width: 992px) {
-    height: 50%;
-    width: 40%;
-    transform: rotate(50deg);
+    width: 15em;
+    height: 40em;
+  }
+  @media screen and (max-width: 768px) {
+    width: 15em;
+    height: 30em;
   }
 
-  @media screen and (max-width: 480px) {
-    height: 40%;
-    width: 35%;
-    transform: rotate(50deg);
+  @media screen and (max-width: 576px) {
+    height: 10em;
+    width: 20em;
+    transform: rotate(40deg);
   }
 `;
 
 export const HeaderLined = styled.div`
   position: absolute;
-  width: 45%;
-  height: 50%;
+  width: 15em;
+  height: 35em;
   border-radius: 50%;
   border: 5px dashed #6895fa;
   box-sizing: border-box;
-  transform: rotate(-40deg);
+  transform: rotate(-50deg);
   @media screen and (max-width: 992px) {
-    height: 50%;
-    width: 40%;
-    transform: rotate(-50deg);
+    width: 15em;
+    height: 40em;
   }
 
-  @media screen and (max-width: 480px) {
-    height: 40%;
-    width: 35%;
-    transform: rotate(-50deg);
+  @media screen and (max-width: 768px) {
+    width: 15em;
+    height: 30em;
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 10em;
+    width: 20em;
+    transform: rotate(-40deg);
   }
 `;
 
 export const HeaderGraphicImg = styled.img`
   width: 80%;
   z-index: 1;
-  @media screen and (max-width: 992px) {
-    width: 90%;
-  }
 
-  @media screen and (max-width: 768px) {
-    width: 75%;
+  @media screen and (max-width: 992px) {
+    width: 60%;
   }
 
   @media screen and (max-width: 480px) {
