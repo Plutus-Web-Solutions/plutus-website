@@ -14,7 +14,6 @@ import project from "../../assets/project.png";
 import projectleft from "../../assets/projectleft.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
 import tgc from "../../assets/tgctwodevice1.png";
 import tanya from "../../assets/tanyatwodevice2.png";
 import { Link } from "react-router-dom";

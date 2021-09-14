@@ -8,7 +8,6 @@ import {
 import person from "../../assets/person.png";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
 import krishna from "../../assets/k.png";
 import japnit from "../../assets/j.png";
 import utkarsh from "../../assets/u.png";

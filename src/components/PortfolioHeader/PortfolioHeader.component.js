@@ -8,22 +8,19 @@ import {
 import map from "../../assets/map.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
+import NavBar from "../Navbar/Navbar";
 import { HeaderTitle, HeaderSubtitle } from "../Header/Header.styles";
 import headerImage from "../../assets/portfolio.png";
 
 export default function PortfolioHeader({ contact }) {
   return (
-    <Container
-      fluid
-      style={{ margin: "0 0 3em 0", padding: "0", boxSizing: "border-box" }}
-    >
-      <Row style={{ margin: "0em 0.5em" }}>
+    <Container fluid>
+      <Row>
         <NavBar contact={contact} active="Portfolio"></NavBar>
       </Row>
 
       <HeaderContainer>
-        <Row style={{ height: "90%", padding: "0" }}>
+        <Row style={{ height: "90%", padding: "0", marginBottom: "3em" }}>
           <Col lg={6} sm={12}>
             <HeaderAlignment bigalignment="flex-start">
               <HeaderImage src={headerImage} />
