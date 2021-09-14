@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const ProjectDisplayArrow = styled.img`
   width: 4em;
   display: none;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     display: block;
   }
   &:hover {
@@ -21,7 +21,7 @@ export const ProjectDisplaySolidCircle = styled.div`
   position: absolute;
   margin-right: 5em;
   display: none;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     display: block;
   }
 `;
@@ -34,7 +34,7 @@ export const ProjectDisplayLinedCircle = styled.div`
   margin-left: 10em;
   position: absolute;
   display: none;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     display: block;
   }
 `;
@@ -45,7 +45,7 @@ export const ProjectDisplayDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     flex-direction: row-reverse;
   }
 `;
@@ -56,7 +56,7 @@ export const ProjectDisplayImage = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     flex: 0.6;
   }
 `;
@@ -67,7 +67,8 @@ export const ProjectDisplayContent = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  @media screen and (min-width: 961px) {
+  margin-top: 2em;
+  @media screen and (min-width: 992px) {
     flex: 0.4;
     align-items: flex-start;
     margin-top: 4em;
@@ -86,7 +87,7 @@ export const ProjectDisplayProgress = styled.div`
   background-color: grey;
   margin-bottom: 1em;
   display: flex;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     display: none;
   }
 `;
@@ -96,7 +97,7 @@ export const ProjectDisplayhalf = styled.div`
   height: 0.25em;
   background-color: ${(props) => props.color};
   margin-bottom: 1em;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     display: none;
   }
 `;
@@ -107,7 +108,7 @@ export const ProjectDisplayTitle = styled.div`
   text-align: center;
   margin-bottom: 0.2em;
 
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     text-align: left;
     line-height: 1em;
   }
@@ -116,7 +117,7 @@ export const ProjectDisplayTitle = styled.div`
 export const ProjectDisplaySubTitle = styled.div`
   font-size: 1.25em;
   margin-bottom: 0.5em;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     text-align: left;
   }
 `;
@@ -126,7 +127,7 @@ export const ProjectDisplayLink = styled(Link)`
   text-decoration: none;
   font-size: 1.5em;
   margin-bottom: 0.5em;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     font-size: 1.25em;
     font-weight: 600;
   }
@@ -142,7 +143,7 @@ export const ProjectDescription = styled.div`
   font-size: 1.25em;
   margin-bottom: 0.5em;
   text-align: center;
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: 992px) {
     display: none;
   }
 `;

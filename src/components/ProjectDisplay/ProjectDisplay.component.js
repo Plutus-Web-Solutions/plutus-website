@@ -62,7 +62,7 @@ class ProjectDisplay extends React.Component {
   render() {
     const { index, projects } = this.state;
     return (
-      <Container>
+      <Container fluid style={{ padding: "10em 2em" }}>
         <Row>
           <Col
             xl={3}
@@ -71,7 +71,7 @@ class ProjectDisplay extends React.Component {
             sm={1}
             xs={1}
             className="d-flex justify-content-center align-items-center"
-            style={{ height: "100vh" }}
+            style={{ padding: "0em" }}
           >
             <ProjectDisplayArrow
               src={arrow}
@@ -86,8 +86,8 @@ class ProjectDisplay extends React.Component {
             md={8}
             sm={10}
             xs={10}
-            style={{ height: "100vh" }}
             className="d-flex justify-content-center align-items-center"
+            style={{ padding: "0em" }}
           >
             <ProjectDisplaySolidCircle />
             <ProjectDisplayLinedCircle />
@@ -133,7 +133,9 @@ class ProjectDisplay extends React.Component {
             sm={1}
             xs={1}
             className="d-flex justify-content-center align-items-center"
-            style={{ height: "100vh" }}
+            style={{
+              padding: "0em",
+            }}
           >
             <ProjectDisplayArrow src={arrow} onClick={this.nextProject} />
           </Col>

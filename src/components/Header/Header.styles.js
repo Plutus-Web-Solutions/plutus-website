@@ -113,7 +113,7 @@ export const HeaderGraphic = styled.div`
 export const HeaderSolid = styled.div`
   position: absolute;
   width: 15em;
-  height: 35em;
+  height: 30em;
   border-radius: 50%;
   background: #9ad3ff;
   transform: rotate(50deg);
@@ -136,7 +136,7 @@ export const HeaderSolid = styled.div`
 export const HeaderLined = styled.div`
   position: absolute;
   width: 15em;
-  height: 35em;
+  height: 30em;
   border-radius: 50%;
   border: 5px dashed #6895fa;
   box-sizing: border-box;
@@ -159,7 +159,7 @@ export const HeaderLined = styled.div`
 `;
 
 export const HeaderGraphicImg = styled.img`
-  width: 80%;
+  width: 70%;
   z-index: 1;
 
   @media screen and (max-width: 992px) {

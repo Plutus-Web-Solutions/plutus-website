@@ -56,7 +56,8 @@ class OurServices extends React.Component {
           </Col>
           <Col lg={12}>
             <OurServicesSubtitle className="text-center">
-            We can help you with all your tech needs. We can help cause we are awesome!
+              We can help you with all your tech needs. We can help cause we are
+              awesome!
             </OurServicesSubtitle>
           </Col>
         </Row>
@@ -75,7 +76,9 @@ class OurServices extends React.Component {
                 UI/UX
               </ServicesCardTitle>
               <ServicesCardSubtitle size={this.state.sizes[0]}>
-              We innovate and act upon new ideas to engage the user better and to enhance the look of the website. You can choose from the premade catalogue providing numerous design options for every component your website needs !</ServicesCardSubtitle>
+                We innovate and act upon new ideas to engage the user better and
+                to enhance the look of the website.
+              </ServicesCardSubtitle>
             </ServiceCard>
           </Col>
           <Col
@@ -91,8 +94,9 @@ class OurServices extends React.Component {
                 Web Development
               </ServicesCardTitle>
               <ServicesCardSubtitle size={this.state.sizes[1]}>
-              Get your website developed and deployed in no time, in MERN stack(the fastest out there) Servicing for 3 months is on us!
-</ServicesCardSubtitle>
+                Get your website developed and deployed in no time, using MERN
+                stack (the fastest out there). Servicing for 3 months is on us!
+              </ServicesCardSubtitle>
             </ServiceCard>
           </Col>
           <Col
@@ -105,11 +109,12 @@ class OurServices extends React.Component {
             <ServiceCard data-key="2" id="2" size={this.state.sizes[2]}>
               <ServicesCardImg size={this.state.sizes[2]} src={icon} />
               <ServicesCardTitle size={this.state.sizes[2]}>
-                Branding & Social Media
+                Custom Designs
               </ServicesCardTitle>
               <ServicesCardSubtitle size={this.state.sizes[2]}>
-              Get your website developed and deployed in no time, in MERN stack(the fastest out there) Servicing for 3 months is on us!
-</ServicesCardSubtitle>
+                Whether it be your social media posts or your branding we got
+                you covered.
+              </ServicesCardSubtitle>
             </ServiceCard>
           </Col>
         </Row>

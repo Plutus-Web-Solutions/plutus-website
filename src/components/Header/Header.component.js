@@ -52,7 +52,7 @@ class Header extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container fluid style={{ overflow: "hidden" }}>
         <Row style={{ margin: "0em 0.5em" }}>
           <NavBar active="Home" contact={this.props.contact}></NavBar>
         </Row>
