@@ -93,33 +93,35 @@ class ContactUs2 extends React.Component {
               <Alignment align="end">
                 <TestimonialDiv>
                   <TestimonialContent>
-                    Dont stop me now I am having such a good time, I am a
-                    shooting star like a good movie man love it
-                    <ClientDiv>- Japnit Kaur Ahuja, CEO of Xcompany</ClientDiv>
+                    The team is very dedicated. They are fully involved with the
+                    product from designing to coding to even ideating new
+                    features. I will be working with them long term.
+                    <ClientDiv>
+                      - Tanya Arora, Founder of Tanya M Arora
+                    </ClientDiv>
                   </TestimonialContent>
-                  <TestimonialImage style={{ background: `url(${face})` }} />
                 </TestimonialDiv>
               </Alignment>
 
               <Alignment align="start">
                 <TestimonialDiv>
                   <TestimonialContent>
-                    Dont stop me now I am having such a good time, I am a
-                    shooting star like a good movie man love it
-                    <ClientDiv>- Japnit Kaur Ahuja, CEO of Xcompany</ClientDiv>
+                    Everyone is very efficient. They make themseleves available
+                    all the time to fully grasp the product. Finished the
+                    website ahead of time.
+                    <ClientDiv>- Harpreet, Director of TGC</ClientDiv>
                   </TestimonialContent>
-                  <TestimonialImage style={{ background: `url(${face})` }} />
                 </TestimonialDiv>
               </Alignment>
 
               <Alignment align="end">
                 <TestimonialDiv>
                   <TestimonialContent>
-                    Dont stop me now I am having such a good time, I am a
-                    shooting star like a good movie man love it
-                    <ClientDiv>- Japnit Kaur Ahuja, CEO of Xcompany</ClientDiv>
+                    I love ideating and brainstorming with the team. They are a
+                    very positive bunch of people to work with! Excited for
+                    what's brewing.
+                    <ClientDiv>- Adam, Ongoing project</ClientDiv>
                   </TestimonialContent>
-                  <TestimonialImage style={{ background: `url(${face})` }} />
                 </TestimonialDiv>
               </Alignment>
             </TestimonialsDiv>
