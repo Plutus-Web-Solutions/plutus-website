@@ -31,7 +31,7 @@ export default function PortfolioHeader({ contact }) {
             <HeaderAlignment bigalignment="center">
               <HeaderTitle>Our Clients</HeaderTitle>
               <HeaderSubtitle>
-                We are a team of four amazing people!
+                We have worked in a variety of industries!
               </HeaderSubtitle>
             </HeaderAlignment>
           </Col>

@@ -32,11 +32,12 @@ export default function IndividualProject(props) {
             <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>Tanya M Arora</CompanyNameHeading>
             <ProjectDescription align="left">
-              Dont stop me now I am having such a good time, I am a shooting
-              star like a tiger defying the laws of gravity. I am like a lafy
-              givoca, no one is stopp me, I am burn in the through fire 200
-              degrees the why they call me Mr. Farehnity, I am travelling at
-              speed of light I am a super sonic mad at you
+              Tanya M Arora is high end fashion boutique based in Delhi, India.
+              The brand caters to all kinds of audiences needing trendy clothes
+              at a good price point. We worked on this website from the start to
+              finish. We conducted user research using her client base and came
+              up with designs that suited her audience. Then we made a
+              completely new digital presence for this brand.
             </ProjectDescription>
 
             <ViewProject>
@@ -75,11 +76,10 @@ export default function IndividualProject(props) {
             <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>The Girl Code</CompanyNameHeading>
             <ProjectDescription align="right">
-              The girl code is a non-profit organisation that aims to bridge the
+              The Girl Code is a non-profit organisation that aims to bridge the
               gender gap in the tech community by hosting free workshops for
-              women. It has chapters in 3 countries and has taught over 2000
-              girls. We revamped the organisation’s website to include all the
-              recent changes.
+              women. We revamped the organisation’s website to include all the
+              recent changes and the impact they have made.
             </ProjectDescription>
 
             <ViewProject>

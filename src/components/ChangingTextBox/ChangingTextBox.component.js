@@ -8,7 +8,7 @@ class ChangingTextBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      words: ["DETERMINISTIC.", "FUTURISTIC.", "INNOVATIVE.", "ELEGANT."],
+      words: ["PLUTUS.", "DETERMINISTIC.", "FUTURISTIC.", "INNOVATIVE."],
       index: 0,
     };
   }

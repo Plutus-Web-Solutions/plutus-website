@@ -55,8 +55,8 @@ class OurServices extends React.Component {
           </Col>
           <Col lg={12}>
             <OurServicesSubtitle className="text-center">
-              We can help you with all your tech needs. We can help cause we are
-              awesome!
+              We can help you with all your tech needs. <br />
+              Why hire us? Cause we are young, motivated and very quick!
             </OurServicesSubtitle>
           </Col>
         </Row>
