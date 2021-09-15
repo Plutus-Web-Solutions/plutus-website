@@ -41,6 +41,13 @@ class TanyaProject extends Component {
         <ProjectHeader
           title="Tanya M Arora"
           subtitle="High-end Fashion Boutique Website"
+          companyname="Tanya M Arora"
+          des="Tanya M Arora is high end fashion boutique based in Delhi, India.
+          The brand caters to all kinds of audiences needing trendy clothes
+          at a good price point. We worked on this website from the start to
+          finish. We conducted user research using her client base and came
+          up with designs that suited her audience. Then we made a
+          completely new digital presence for this brand."
           contact={this.scrollToContact}
           image={tanya}
           content='Tanya M Arora is a fashion designer based out of Delhi. She encapsulates an enormous range of collections, from bridal to partywear. We helped her get a digital presence by portraying her work on a website.'

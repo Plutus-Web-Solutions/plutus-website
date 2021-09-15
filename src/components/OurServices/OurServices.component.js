@@ -10,7 +10,6 @@ import {
 import icon from "../../assets/icon.png";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
 
 class OurServices extends React.Component {
   constructor() {
@@ -56,8 +55,8 @@ class OurServices extends React.Component {
           </Col>
           <Col lg={12}>
             <OurServicesSubtitle className="text-center">
-              We can help you with all your tech needs. We can help cause we are
-              awesome!
+              We can help you with all your tech needs. <br />
+              Why hire us? Cause we are young, motivated and very quick!
             </OurServicesSubtitle>
           </Col>
         </Row>

@@ -39,7 +39,12 @@ class TGCProject extends Component {
       <>
         <ProjectHeader
           title="The Girl Code"
-          subtitle="Revamped the organisation's website !"
+          companyname="The Girl Code"
+          subtitle="Revamped the organisation's website!"
+          des="The Girl Code is a non-profit organisation that aims to bridge the
+          gender gap in the tech community by hosting free workshops for
+          women. We revamped the organisation’s website to include all the
+          recent changes and the impact they have made."
           contact={this.scrollToContact}
           image={image}
           content = ' The girl code is a non-profit organisation that aims to bridge the gender gap in the tech community by hosting free workshops for women. It has chapters in 3 countries and has taught over 2000 girls. We revamped the organisation’s website to include all the recent changes.'

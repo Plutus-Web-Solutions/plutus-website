@@ -29,7 +29,8 @@ class ProjectSlider extends React.Component {
             <ContentDiv>
               <Title> One stop shop for all your needs!</Title>
               <Subtitle>
-                At plutus we aim to fullfill are your agency needs and here
+                At Plutus we aim to fullfill all your agency needs! From web
+                design to development to grpahic design, all under one roof.
               </Subtitle>
             </ContentDiv>
           </Col>

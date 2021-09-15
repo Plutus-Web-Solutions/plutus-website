@@ -18,7 +18,7 @@ import graphic4 from "../../assets/tanyagraphic4.png";
 
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
+import NavBar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 
 class Header extends Component {
@@ -52,8 +52,8 @@ class Header extends Component {
 
   render() {
     return (
-      <Container fluid style={{ overflow: "hidden" }}>
-        <Row style={{ margin: "0em 0.5em" }}>
+      <Container fluid>
+        <Row>
           <NavBar active="Home" contact={this.props.contact}></NavBar>
         </Row>
 

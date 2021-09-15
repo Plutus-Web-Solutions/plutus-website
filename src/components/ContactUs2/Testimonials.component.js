@@ -120,7 +120,7 @@ class ContactUs2 extends React.Component {
                     I love ideating and brainstorming with the team. They are a
                     very positive bunch of people to work with! Excited for
                     what's brewing.
-                    <ClientDiv>- Adam, Ongoing project</ClientDiv>
+                    <ClientDiv>- Mike, Ongoing project</ClientDiv>
                   </TestimonialContent>
                 </TestimonialDiv>
               </Alignment>

@@ -161,7 +161,6 @@ export const HeaderLined = styled.div`
 export const HeaderGraphicImg = styled.img`
   width: 70%;
   z-index: 1;
-
   @media screen and (max-width: 992px) {
     width: 60%;
   }

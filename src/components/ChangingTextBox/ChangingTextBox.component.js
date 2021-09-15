@@ -3,13 +3,12 @@ import { Title, HighlightedWord } from "./ChangingTextBox.styles";
 import icon from "../../assets/icon.png";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
 
 class ChangingTextBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      words: ["DETERMINISTIC.", "FUTURISTIC.", "INNOVATIVE.", "ELEGANT."],
+      words: ["PLUTUS.", "DETERMINISTIC.", "FUTURISTIC.", "INNOVATIVE."],
       index: 0,
     };
   }

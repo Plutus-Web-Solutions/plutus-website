@@ -2,7 +2,7 @@ import React from "react";
 import map from "../../assets/map.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
+import NavBar from "../Navbar/Navbar";
 import {
   HeaderTitle,
   HeaderSubtitle,
@@ -26,8 +26,8 @@ import { Link } from "react-router-dom";
 
 export default function ProjectHeader(props) {
   return (
-    <Container fluid style={{ padding: "0", boxSizing: "border-box" }}>
-      <Row style={{ margin: "0em 0.5em" }}>
+    <Container fluid>
+      <Row>
         <NavBar active="Portfolio" contact={props.contact}></NavBar>
       </Row>
 
@@ -55,9 +55,8 @@ export default function ProjectHeader(props) {
         >
           <ContentDiv align="flex-start">
             <ProjectTypeHeading>Web Design</ProjectTypeHeading>
-            <CompanyNameHeading>Company Name</CompanyNameHeading>
-            <ProjectDescription align="left">
-             {props.content} </ProjectDescription>
+            <CompanyNameHeading>{props.companyname}</CompanyNameHeading>
+            <ProjectDescription align="left">{props.des}</ProjectDescription>
 
             <ViewProject>
               <Line /> <a>view website</a>

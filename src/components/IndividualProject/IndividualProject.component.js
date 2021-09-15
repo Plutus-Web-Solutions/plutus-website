@@ -14,7 +14,6 @@ import project from "../../assets/project.png";
 import projectleft from "../../assets/projectleft.png";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import NavBar from "../NavBar/NavBar.component";
 import tgc from "../../assets/tgctwodevice1.png";
 import tanya from "../../assets/tanyatwodevice2.png";
 import { Link } from "react-router-dom";
@@ -33,8 +32,13 @@ export default function IndividualProject(props) {
             <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>Tanya M Arora</CompanyNameHeading>
             <ProjectDescription align="left">
-            Tanya M Arora is a fashion designer based out of Delhi. She encapsulates an enormous range of collections, from bridal to partywear. We helped her get a digital presence by portraying her work on a website. 
-</ProjectDescription>
+              Tanya M Arora is high end fashion boutique based in Delhi, India.
+              The brand caters to all kinds of audiences needing trendy clothes
+              at a good price point. We worked on this website from the start to
+              finish. We conducted user research using her client base and came
+              up with designs that suited her audience. Then we made a
+              completely new digital presence for this brand.
+            </ProjectDescription>
 
             <ViewProject>
               <Line />
@@ -72,11 +76,10 @@ export default function IndividualProject(props) {
             <ProjectTypeHeading>Complete Web Solutions</ProjectTypeHeading>
             <CompanyNameHeading>The Girl Code</CompanyNameHeading>
             <ProjectDescription align="right">
-              The girl code is a non-profit organisation that aims to bridge the
+              The Girl Code is a non-profit organisation that aims to bridge the
               gender gap in the tech community by hosting free workshops for
-              women. It has chapters in 3 countries and has taught over 2000
-              girls. We revamped the organisation’s website to include all the
-              recent changes.
+              women. We revamped the organisation’s website to include all the
+              recent changes and the impact they have made.
             </ProjectDescription>
 
             <ViewProject>
