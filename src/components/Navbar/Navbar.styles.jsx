@@ -152,6 +152,14 @@ export const NavItem = styled.li`
 export const NavLink = styled.a`
   font-size: 1.5em;
   text-decoration: none;
+  color: black;
+  border-bottom: ${(props) => (props.active ? " #9ad3ff 1.5px solid" : "none")};
+  padding: 0.25em 0.25em;
+
+  &:hover {
+    color: #9ad3ff;
+    text-decoration: none;
+  }
   color: #7e82f4;
   text-transform: uppercase;
 
